@@ -14,6 +14,10 @@
 		18D481351A312F0A00BE05E1 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18D481341A312F0A00BE05E1 /* Images.xcassets */; };
 		18D481381A312F0A00BE05E1 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18D481361A312F0A00BE05E1 /* LaunchScreen.xib */; };
 		18D481441A312F0A00BE05E1 /* OverdueTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 18D481431A312F0A00BE05E1 /* OverdueTests.m */; };
+		18D4814F1A312FE700BE05E1 /* AddTaskViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18D4814E1A312FE700BE05E1 /* AddTaskViewController.m */; };
+		18D481521A31300B00BE05E1 /* DetailedTaskViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18D481511A31300B00BE05E1 /* DetailedTaskViewController.m */; };
+		18D481551A31302D00BE05E1 /* EditViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18D481541A31302D00BE05E1 /* EditViewController.m */; };
+		18D4815A1A32108200BE05E1 /* Task.m in Sources */ = {isa = PBXBuildFile; fileRef = 18D481591A32108200BE05E1 /* Task.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +44,15 @@
 		18D4813D1A312F0A00BE05E1 /* OverdueTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OverdueTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		18D481421A312F0A00BE05E1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		18D481431A312F0A00BE05E1 /* OverdueTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OverdueTests.m; sourceTree = "<group>"; };
+		18D4814D1A312FE700BE05E1 /* AddTaskViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddTaskViewController.h; sourceTree = "<group>"; };
+		18D4814E1A312FE700BE05E1 /* AddTaskViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddTaskViewController.m; sourceTree = "<group>"; };
+		18D481501A31300B00BE05E1 /* DetailedTaskViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailedTaskViewController.h; sourceTree = "<group>"; };
+		18D481511A31300B00BE05E1 /* DetailedTaskViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailedTaskViewController.m; sourceTree = "<group>"; };
+		18D481531A31302D00BE05E1 /* EditViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EditViewController.h; sourceTree = "<group>"; };
+		18D481541A31302D00BE05E1 /* EditViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EditViewController.m; sourceTree = "<group>"; };
+		18D481561A320BC900BE05E1 /* OverduePrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OverduePrefixHeader.pch; sourceTree = "<group>"; };
+		18D481581A32108200BE05E1 /* Task.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Task.h; sourceTree = "<group>"; };
+		18D481591A32108200BE05E1 /* Task.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Task.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,9 +96,16 @@
 			children = (
 				18D4812B1A312F0A00BE05E1 /* AppDelegate.h */,
 				18D4812C1A312F0A00BE05E1 /* AppDelegate.m */,
+				18D481311A312F0A00BE05E1 /* Main.storyboard */,
 				18D4812E1A312F0A00BE05E1 /* ViewController.h */,
 				18D4812F1A312F0A00BE05E1 /* ViewController.m */,
-				18D481311A312F0A00BE05E1 /* Main.storyboard */,
+				18D4814D1A312FE700BE05E1 /* AddTaskViewController.h */,
+				18D4814E1A312FE700BE05E1 /* AddTaskViewController.m */,
+				18D481501A31300B00BE05E1 /* DetailedTaskViewController.h */,
+				18D481511A31300B00BE05E1 /* DetailedTaskViewController.m */,
+				18D481531A31302D00BE05E1 /* EditViewController.h */,
+				18D481541A31302D00BE05E1 /* EditViewController.m */,
+				18D481571A32106200BE05E1 /* Models */,
 				18D481341A312F0A00BE05E1 /* Images.xcassets */,
 				18D481361A312F0A00BE05E1 /* LaunchScreen.xib */,
 				18D481271A312F0A00BE05E1 /* Supporting Files */,
@@ -98,6 +118,7 @@
 			children = (
 				18D481281A312F0A00BE05E1 /* Info.plist */,
 				18D481291A312F0A00BE05E1 /* main.m */,
+				18D481561A320BC900BE05E1 /* OverduePrefixHeader.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -117,6 +138,15 @@
 				18D481421A312F0A00BE05E1 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		18D481571A32106200BE05E1 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				18D481581A32108200BE05E1 /* Task.h */,
+				18D481591A32108200BE05E1 /* Task.m */,
+			);
+			name = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -219,9 +249,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18D4815A1A32108200BE05E1 /* Task.m in Sources */,
 				18D481301A312F0A00BE05E1 /* ViewController.m in Sources */,
+				18D4814F1A312FE700BE05E1 /* AddTaskViewController.m in Sources */,
 				18D4812D1A312F0A00BE05E1 /* AppDelegate.m in Sources */,
 				18D4812A1A312F0A00BE05E1 /* main.m in Sources */,
+				18D481551A31302D00BE05E1 /* EditViewController.m in Sources */,
+				18D481521A31300B00BE05E1 /* DetailedTaskViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -343,6 +377,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = Overdue/OverduePrefixHeader.pch;
 				INFOPLIST_FILE = Overdue/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -353,6 +389,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = Overdue/OverduePrefixHeader.pch;
 				INFOPLIST_FILE = Overdue/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -412,6 +450,7 @@
 				18D481491A312F0A00BE05E1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		18D4814A1A312F0A00BE05E1 /* Build configuration list for PBXNativeTarget "OverdueTests" */ = {
 			isa = XCConfigurationList;
@@ -420,6 +459,7 @@
 				18D4814C1A312F0A00BE05E1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
